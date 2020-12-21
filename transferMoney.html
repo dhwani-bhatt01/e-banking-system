@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header>
+        <ul class="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="user.php">USERS</a></li>
+          <li><a href="transferMoney.html">TRANSFER MONEY</a></li>
+          <li><a href="transactionHistory.php">TRANSACTION HISTORY</a></li>
+        </ul>
+    </header>
+
+    <div class="heading">
+        <h1>Money Transfer</h1>
+    </div>
+
+    <form action="transactionResult.php" method="POST">
+        <div class="form-content"> 
+            <label for="senderId">Sender's Id</label>
+            <input type="int" placeholder="Enter Id " name="senderId" id="senderId" required>
+        </div>
+
+        <div class="form-content">
+            <label for="receiverId">Receiver's Id</label>
+            <input type="int" placeholder="Enter Id " name="receiverId" id="receiverId" required>
+        </div>
+
+        <div class="form-content">
+            <label for="amount">Amount</label>
+            <input type="double" placeholder="Enter Amount " name="amount" id="amount" required>
+        </div>
+
+        <button class="btn" type="submit">Transfer</button>
+    </form>
+</body>
+</html>
